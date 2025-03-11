@@ -1,0 +1,20 @@
+[tool.poetry]
+package-mode = false
+name = "backend-exercise"
+version = "0.1.0"
+description = "A Python program to fetch and filter research papers from PubMed."
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.26.0"
+pandas = "^2.2.3"
+
+[tool.poetry.group.dev.dependencies]
+
+[tool.poetry.scripts]
+get-papers-list = "get_papers.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
